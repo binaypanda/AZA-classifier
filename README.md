@@ -2,9 +2,12 @@
 
 1. Desktop version of the AZA classifier app
 
-a. unzip Aza_Classifer_desktop_1.0.zip
-b. cd Aza_Classifer_desktop_1.0
-c. java -jar Aza_Classifer.jar
+a. Pre-requisites
+  i. Python3
+ ii. TensorFlow Python library
+b. unzip Aza_Classifer_desktop_1.0.zip
+c. cd Aza_Classifer_desktop_1.0
+d. java -jar Aza_Classifer.jar
 
 2. Mobile version of the AZA classifier app
 
