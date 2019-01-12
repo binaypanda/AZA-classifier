@@ -1,7 +1,7 @@
 # AZA-classifier
-
-1. Desktop version of the AZA classifier app
-
+<br />
+1. Desktop version of the AZA classifier app<br />
+<br />
 a. Pre-requisites\
 <br />
   i. Python3<br />
