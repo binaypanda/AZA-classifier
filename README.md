@@ -6,6 +6,7 @@ a. Pre-requisites<br />
 <br />
   i. Python3<br />
  ii. TensorFlow Python library<br />
+iii. Java (Tested with version "1.8.191")<br />
 <br />
 b. unzip Aza_Classifer_desktop_1.0.zip<br />
 <br />
