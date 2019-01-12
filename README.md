@@ -2,7 +2,7 @@
 <br />
 1. Desktop version of the AZA classifier app<br />
 <br />
-a. Pre-requisites\
+a. Pre-requisites<br />
 <br />
   i. Python3<br />
  ii. TensorFlow Python library<br />
