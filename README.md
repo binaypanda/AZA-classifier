@@ -18,7 +18,6 @@ There are 2 programs which provide 'java'.<br />
    2           /opt/jdk1.8.0_201/bin/java<br />
 Enter to keep the current selection[+], or type selection number: 2<br />
 <br />
-<br />
 	f. sudo alternatives --set javac /opt/jdk1.8.0_201/bin/javac
 	g. sudo alternatives --set jar /opt/jdk1.8.0_201/bin/jar
 <br />
