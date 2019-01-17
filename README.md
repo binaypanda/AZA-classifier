@@ -41,11 +41,11 @@ iii. pip3<br />
 	b. for f in *\(*; do mv "$f" "${f//(/}"; done #eliminates (<br />
 	c. for f in *\)*; do mv "$f" "${f//)/}"; done #eliminates )<br />
 <br />
-B. unzip Aza_Classifer_desktop_1.0.zip<br />
+B. unzip Aza_Classifier_desktop_1.0.zip<br />
 <br />
-C. cd Aza_Classifer_desktop_1.0<br />
+C. cd Aza_Classifier_desktop_1.0<br />
 <br />
-D. java -jar Aza_Classifer.jar<br />
+D. java -jar Aza_Classifier.jar<br />
 <br />
 E. Select option to continue<br />
 	a. Classify image OR<br />
@@ -69,8 +69,8 @@ J. 	a. The progress bar moves. <br />
 	d. Once classification is finished, a popup opens with the message 'Classification Finished. Click Export to Excel to view results'.<br />
 	e. Click on OK.<br />
 	f. Click on the 'Export result to Excel' button.<br />
-	g. The result is saved in spreadsheet format under the name temp_YYYY.MM.DD.hh.mm.ss.xls in the same directory as the Aza_Classifer.jar file.<br />
-	h. Irrespective of the Export result to Excel option being chosen, the results are saved in a text file under the name temp_YYYY.MM.DD.hh.mm.ss, in the same directory as the Aza_Classifer.jar file.<br />
+	g. The result is saved in spreadsheet format under the name temp_YYYY.MM.DD.hh.mm.ss.xls in the same directory as the Aza_Classifier.jar file.<br />
+	h. Irrespective of the Export result to Excel option being chosen, the results are saved in a text file under the name temp_YYYY.MM.DD.hh.mm.ss, in the same directory as the Aza_Classifier.jar file.<br />
 	i. The saved output file displays results in the following format.<br />
 		Filename	Output_Class	Confidence<br />
 		image_4.png	Aza_A+B_High	0.9925176<br />
@@ -93,4 +93,4 @@ K. The user can choose to classify more images, or folders of images, by followi
 <br />
 A. Go to Menu > Settings > Security > and check 'Unknown Sources' to allow your phone to install apps from sources other than the Google Play Store.<br />
 <br />
-B. Install the Aza_Classifer_mobile_1.0.apk on an Android smartphone.<br />
+B. Install the Aza_Classifier_mobile_1.0.apk on an Android smartphone.<br />
