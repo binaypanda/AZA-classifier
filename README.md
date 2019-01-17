@@ -40,6 +40,7 @@ iii. pip3<br />
 	a. for f in *\ *; do mv "$f" "${f// /_}"; done #replaces space by _<br />
 	b. for f in *\(*; do mv "$f" "${f//(/}"; done #eliminates (<br />
 	c. for f in *\)*; do mv "$f" "${f//)/}"; done #eliminates )<br />
+<br />
 B. unzip Aza_Classifer_desktop_1.0.zip<br />
 <br />
 C. cd Aza_Classifer_desktop_1.0<br />
