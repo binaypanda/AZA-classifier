@@ -34,7 +34,8 @@ iii. pip3<br />
 	a. sudo pip-3.6 install numpy<br />
 	b. sudo pip-3.6 install tensorflow<br />
 <br />
-  v. File names of images to be classified should not have spaces or parantheses. If they do, the following steps can be used to get rid of them. <br />
+  v. xquartz for MAC users
+ vi. File names of images to be classified should not have spaces or parantheses. If they do, the following steps can be used to get rid of them. <br />
 	a. for f in *\ *; do mv "$f" "${f// /_}"; done #replaces space by _<br />
 	b. for f in *\(*; do mv "$f" "${f//(/}"; done #eliminates (<br />
 	c. for f in *\)*; do mv "$f" "${f//)/}"; done #eliminates )<br />
