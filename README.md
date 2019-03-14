@@ -219,10 +219,11 @@
 	Confidence indicates the confidence (probability) with which the image was classified as the resulting Output_Class\
 11. The user can choose to classify more images, or folders of images, by following the above steps, or exit after clicking on the Exit button.
 
-## Mobile version of the AZA classifier app ##
+## Android version of the AZA classifier app ##
 
 1. Go to Menu > Settings > Security > and check 'Unknown Sources' to allow your phone to install apps from sources other than the Google Play Store.
 2. Install the AZAclassifier_mobile_v1.1.apk on an Android smartphone.
+   1. We tested the app and found it to work on Android v5.1
 3. Running the mobile app. 
    1. Choose the Leaf Mode or the Fruit Mode
    2. An Instructions Dialog pops up with the message ‘Place a single neem leaf (fruit) at the center of the camera view. Ensure no similar colored objects in the background, to facilitate automated background removal, prior to classification.
