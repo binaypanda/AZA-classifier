@@ -179,71 +179,59 @@
 2. for f in *\(*; do mv "$f" "${f//(/}"; done #eliminates (
 3. for f in *\)*; do mv "$f" "${f//)/}"; done #eliminates )
 
-### unzip Aza_Classifier_desktop_1.0.zip ###
-### cd Aza_Classifier_desktop_1.0 ###
-### java -jar Aza_Classifier.jar ###
-### Select option to continue ###
-#### Classify image ####
-#### Classify folder ####
-### Select file/folder to classify ###
-#### Browse to the image ####
-#### Browse to the folder containing multiple images ####
-### Classify from - ###
-#### Click on Leaf, if you want to classify a leaf image   or a folder of leaf images. ####
-#### Click on Fruit, if you want to classify a fruit image or a folder of fruit images. ####
-### The image path or the folder path is displayed inside 'Selected file path' ###
-### Upon this, the Classify button is enabled. Click on it. ###
-### Progress ###
-#### The progress bar moves. ####
-#### The results are displayed in the window, for a selected image, or all images in the selected folder. (e.g. image_18.png azaL 0.9922415) ####
-#### Once classification is finished, a popup opens with the message 'Classification Finished. Click Export to Spreadsheet to view results'. ####
-#### Click on OK. ####
-#### Click on the 'Export results to Spreadsheet' button. ####
-#### The result is saved in spreadsheet format under the name temp_YYYY.MM.DD.hh.mm.ss.xls in the same directory as the Aza_Classifier.jar file. ####
-#### Irrespective of the Export result to Excel option being chosen, the results are saved in a text file under the name temp_YYYY.MM.DD.hh.mm.ss, in the same directory as the Aza_Classifier.jar file. ####
-1. The saved output file displays results in the following format. \
-	Filename:Output_Class:Confidence\
-	image_4.png:azaH:0.9925176\
-	image_8.png:azaH:0.9998153\
-	image_18.png:azaL:0.9922415\
-	image_24.png:azaL:1.0\
-	image_28.png:azaL:0.54438215\
-	image_14.png:azaH:0.9999999\
-	image_20.png:azaL:0.99999416\
-	image_9.png:azaH:1.0\
-	image_26.png:azaH:0.84819734\
+### Running the app ###
+1. unzip Aza_Classifier_desktop_1.0.zip
+2. cd Aza_Classifier_desktop_1.0
+3. java -jar Aza_Classifier.jar
+4. Select option to continue
+   1. Classify image
+   2. Classify folder
+5. Select file/folder to classify
+   1. Browse to the image
+   2. Browse to the folder containing multiple images
+6. Classify from -
+   1. Click on Leaf, if you want to classify a leaf image   or a folder of leaf images.
+   2. Click on Fruit, if you want to classify a fruit image or a folder of fruit images.
+7. The image path or the folder path is displayed inside 'Selected file path'.
+8. Upon this, the Classify button is enabled. Click on it.
+9. Progress
+   1. The progress bar moves.
+   2. The results are displayed in the window, for a selected image, or all images in the selected folder. (e.g. image_18.png azaL 0.9922415).
+   3. Once classification is finished, a popup opens with the message 'Classification Finished. Click Export to Spreadsheet to view results'. 
+   4. Click on OK.
+10. Click on the 'Export results to Spreadsheet' button.
+   1. The result is saved in spreadsheet format under the name temp_YYYY.MM.DD.hh.mm.ss.xls in the same directory as the Aza_Classifier.jar file.
+   2. Irrespective of the Export result to Excel option being chosen, the results are saved in a text file under the name temp_YYYY.MM.DD.hh.mm.ss, in the same directory as the Aza_Classifier.jar file.
+      1. The saved output file displays results in the following format. \
+	 Filename:Output_Class:Confidence\
+	 image_4.png:azaH:0.9925176\
+	 image_8.png:azaH:0.9998153\
+	 image_18.png:azaL:0.9922415\
+	 image_24.png:azaL:1.0\
+	 image_28.png:azaL:0.54438215\
+	 image_14.png:azaH:0.9999999\
+	 image_20.png:azaL:0.99999416\
+	 image_9.png:azaH:1.0\
+	 image_26.png:azaH:0.84819734\
 \
 	Filename is the name of the image file.\
 	Output_Class indicates whether the image was classified as low Aza (azaL) or high Aza (azaH).\
 	Confidence indicates the confidence (probability) with which the image was classified as the resulting Output_Class\
-### The user can choose to classify more images, or folders of images, by following the above steps, or exit after clicking on the Exit button. ###
+11. The user can choose to classify more images, or folders of images, by following the above steps, or exit after clicking on the Exit button.
 
-2. Mobile version of the AZA classifier app
+## Mobile version of the AZA classifier app ##
 
-	A. Go to Menu > Settings > Security > and check 'Unknown Sources' to allow your phone to install apps from sources other than the Google Play Store.
-
-	B. Install the AZAclassifier_mobile_v1.1.apk on an Android smartphone.
-
-	C. Choose the Leaf Mode or the Fruit Mode
-
-	D. An Instructions Dialog pops up with the message ‘Place a single neem leaf (fruit) at the center of the camera view. Ensure no similar colored objects in the background, to facilitate automated background removal, prior to classification.
-
-	E. Click on Continue
-
-	F. Select source as Camera
-
-	G. Click an image using the Camera snapshot icon
-
-	H. Click on the Tick(✓) if the image is satisfactory, else the Cross (X).
-
-	I. Decide on the area of focus, and Click Crop
-
-	J. Click on the Magic Wand and eliminate background automatically by clicking on surrounding parts with different colors than that of the leaf or the fruit.
-
-	K. Eliminate the residual background manually by clicking on the Pencil icon, using the Zoom function…
-
-	L. Click on Tick (✓) once satisfied.
-
-	M. The AZA classification appears with the image in the middle, and background turned red with LOW, or green with HIGH text at the bottom.
-
-
+1. Go to Menu > Settings > Security > and check 'Unknown Sources' to allow your phone to install apps from sources other than the Google Play Store.
+2. Install the AZAclassifier_mobile_v1.1.apk on an Android smartphone.
+3. Running the mobile app. 
+   1. Choose the Leaf Mode or the Fruit Mode
+   2. An Instructions Dialog pops up with the message ‘Place a single neem leaf (fruit) at the center of the camera view. Ensure no similar colored objects in the background, to facilitate automated background removal, prior to classification.
+   3. Click on Continue
+   4. Select source as Camera
+   5. Click an image using the Camera snapshot icon
+   6. Click on the Tick(✓) if the image is satisfactory, else the Cross (X).
+   7. Decide on the area of focus, and Click Crop
+   8. Click on the Magic Wand and eliminate background automatically by clicking on surrounding parts with different colors than that of the leaf or the fruit.
+   9. Eliminate the residual background manually by clicking on the Pencil icon, using the Zoom function…
+  10. Click on Tick (✓) once satisfied.
+  11. The AZA classification appears with the image in the middle, and background turned red with LOW, or green with HIGH text at the bottom.
