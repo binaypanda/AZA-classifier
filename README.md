@@ -6,7 +6,7 @@
 
 #### Linux (Ubuntu v18.04 LTS) ####
 
-**Java v8**
+***Java v8***
 
 1. Download JAVA 8 (jdk-8u201-linux-x64.tar.gz) from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html (We have compiled and tested the tool with jdk-8u201 on Linux) into /opt
 2. cd /opt
@@ -34,7 +34,7 @@
       3. export PATH=/opt/jdk1.8.0_201/jre/bin:$PATH
    2. bash
 
-**Python v3.6.7**
+***Python v3.6.7***
 
 1. if using yum
    1. sudo yum -y update
@@ -60,7 +60,7 @@
   16. sudo ./configure --enable-optimizations –with-ensurepip=install
   17. sudo make && sudo make altinstall
 
-**Pip v19.02**
+***Pip v19.02***
 
 1. if using yum
    1. sudo yum -y install python36-pip
@@ -70,7 +70,7 @@
    3. ./python get-pip.py
    4. sudo pip3 install --upgrade pip
 	
-**Numpy v1.16.1 and TensorFlow v1.12.0 Python libraries**
+***Numpy v1.16.1 and TensorFlow v1.12.0 Python libraries***
 
 1. if using yum
    1. sudo pip-3.6 install numpy
@@ -79,21 +79,21 @@
    1. sudo python3.6 /usr/bin/pip3 install numpy
    2. sudo python3.6 /usr/bin/pip3 install tensorflow
 			
-**Make the installed Python version as the default version (Skip if there is no other Python v3+ installed on the system)**
+***Make the installed Python version as the default version (Skip if there is no other Python v3+ installed on the system)***
 
 1. nano ~/\.bashrc
 2. add the following line to the end of this file, save and close
    1. alias python3='python3.6'
 3. bash
 
-**Set environment variables before running the classifier application.**
+***Set environment variables before running the classifier application.***
 
 1. nano ~/\.bashrc
 2. add the following line to the end of this file, save and close
    1. export TF_CPP_MIN_LOG_LEVEL=2
 3. bash
 
-**In case of a warning message like ‘Gtk-Message: 21:24:36.083: Failed to load module "canberra-gtk-module"’, while exporting results to Excel:**
+***In case of a warning message like ‘Gtk-Message: 21:24:36.083: Failed to load module "canberra-gtk-module"’, while exporting results to Excel:***
 
 1. sudo apt-get install	 libcanberra-gtk-module
 
