@@ -99,193 +99,124 @@
 
 #### PC (Windows 10) ####
 
-			i. Java v8
+***Java v8***
 
-				a. Download JAVA 8 (jdk-8u201-windows-x64.exe) from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html into C:\Program Files\Java\jre1.8.0_201
+1. Download JAVA 8 (jdk-8u201-windows-x64.exe) from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html into C:\Program Files\Java\jre1.8.0_201
 
-			ii. Python v3.6.7
+***Python v3.6.7***
 
-				a. Download and install (https://www.python.org/ftp/python/3.6.7/python-3.6.7-amd64.exe)
+1. Download and install (https://www.python.org/ftp/python/3.6.7/python-3.6.7-amd64.exe)
+2. In the installer, Add Python 3.6 to PATH
+3. Click on Install Now
+4. Inside command prompt:
+   1. cp python.exe python3.exe
 
-				b. In the installer, Add Python 3.6 to PATH
+***Cygwin***
 
-				c. Click on Install Now
-
-				d. Inside command prompt:
-
-					a). cp python.exe python3.exe
-
-			iii. Cygwin
-
-				a. Download and install (https://www.cygwin.com/setup-x86_64.exe)
-
-				b. Choose ‘Install from Internet’
-
-				c. Install into C:\cygwin64
-
-				d. Choose one of the mirrors
-
-				e. Select All packages to install
-
-				f. after installation, open Cygwin, and cd to the installed path (for e.g. cd /cygdrive/c/Users/dell/Documents/Aza_Classifier_desktop_1.0)
-
-				g. Inside  cygwin:
-
-					a). python -m pip install --upgrade pip
-
-					b). python -m pip install numpy==1.14.5
-
-					c). python -m pip install tensorflow==1.10.0
-
-					d). ImportError: Could not find 'msvcp140.dll'. TensorFlow requires that this DLL be installed in a directory that is named in your %PATH% environment variable. You may install this DLL by downloading Visual C++ 2015 Redistributable Update 3 from this URL: https://www.microsoft.com/en-us/download/details.aspx?id=53587. This error may be encountered at the time of importing tensorflow. If so, download the msvcp140.dll file from https://www.dll-files.com/download/8d55109b9757f997fce995b2020eb8ff/msvcp140.dll.html?c=Q2Zha0VKQjZMb1pGQy81a280S1ZFUT09 and follow the instructions for 64-bit dll from https://www.dll-files.com/download/8d55109b9757f997fce995b2020eb8ff/msvcp140.dll.html?c=Q2Zha0VKQjZMb1pGQy81a280S1ZFUT09
-
-					e). Set environment variables in CygWin before running.
-					export TF_CPP_MIN_LOG_LEVEL=2
+1. Download and install (https://www.cygwin.com/setup-x86_64.exe)
+2. Choose ‘Install from Internet’
+3. Install into C:\cygwin64
+4. Choose one of the mirrors
+5. Select All packages to install
+6. after installation, open Cygwin, and cd to the installed path (for e.g. cd /cygdrive/c/Users/dell/Documents/Aza_Classifier_desktop_1.0)
+7. Inside  cygwin:
+   1. python -m pip install --upgrade pip
+   2. python -m pip install numpy==1.14.5
+   3. python -m pip install tensorflow==1.10.0
+   4. ImportError: Could not find 'msvcp140.dll'. TensorFlow requires that this DLL be installed in a directory that is named in your %PATH% environment variable. You may install this DLL by downloading Visual C++ 2015 Redistributable Update 3 from this URL: https://www.microsoft.com/en-us/download/details.aspx?id=53587. This error may be encountered at the time of importing tensorflow. If so, download the msvcp140.dll file from https://www.dll-files.com/download/8d55109b9757f997fce995b2020eb8ff/msvcp140.dll.html?c=Q2Zha0VKQjZMb1pGQy81a280S1ZFUT09 and follow the instructions for 64-bit dll from https://www.dll-files.com/download/8d55109b9757f997fce995b2020eb8ff/msvcp140.dll.html?c=Q2Zha0VKQjZMb1pGQy81a280S1ZFUT09
+   5. Set environment variables in CygWin before running.
+      1. export TF_CPP_MIN_LOG_LEVEL=2
 			
-			iv. GNU utilities for Windows
+***GNU utilities for Windows***
 
-				a. GNU coreutils 
-				http://gnuwin32.sourceforge.net/downlinks/coreutils.php
-				
-				b. Gawk package
-				http://gnuwin32.sourceforge.net/downlinks/gawk.php
+1. GNU coreutils 
+   1. http://gnuwin32.sourceforge.net/downlinks/coreutils.php
+2. Gawk package
+   1. http://gnuwin32.sourceforge.net/downlinks/gawk.php
 
-		III. Mac OS Mojave 10.14
+#### Mac OS Mojave 10.14 ####
 
-			i. General pre-requisites for a native Mac OS Mojave 10.14 system with several dependencies pre-installed
+*General pre-requisites for a native Mac OS Mojave 10.14 system with several dependencies pre-installed*
 
-				a. Xcode
+***Xcode***
+***Homebrew***
+***Java 8***
+***Python3***
+***Python3 modules, Numpy and Tensorflow***
 
-				b. Homebrew
+*Detailed pre-requisites for mac OS Mojave 10.14 installed on Ubuntu 18.04 LTS using VMWare WorkStation*
 
-				c. Java 8
+***VMWare WorkStation 15.0.2 for Linux 64-bit***
+1. Download from https://www.techspot.com/downloads/downloadnow/189/?evp=f14a48a23bc560f5fbe81b8d83387b41&file=2
+2. chmod a+x VMware-Player-15.0.2-10952284.x86_64.bundle
+3. sudo ./Vmware-Player-15.0.2-10952284.x86_64.bundle
+4. Follow steps to install mac OS Mojave 10.14 on the VMware workstation from this link: https://www.aioboot.com/en/macos-vmware-workstation/
+5. Install Command Line Tools for Xcode
+   1. xcode-select --install
+6. Install homebrew
+   1. mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+7. Install JAVA 8
+   1. cd homebrew
+   2. ./brew tap caskroom versions
+   3. ./brew cask install java8
+8. Install Python 3 (default 3.7.2)
+   1. ./brew install python3
+9. Install Python modules
+   1. pip3 install numpy
+   2. pip3 install tensorflow
+10. Export Paths
+   1. Edit ~/\.bash_profile (nano ~/\.bash_profile and add the following at the end.)
+      1. export PATH=/Users/xyz/homebrew/bin:$PATH (Change the homebrew path according to your folder structure)
+      2. export PATH=TF_CPP_MIN_LOG_LEVEL=2
+   2. Save and Close the ~/\.bash_profile
+   3. source ~/\.bash_profile
 
-				d. Python3
+### Other Prerequisites ###
 
-				e. Python3 modules, Numpy and Tensorflow
+#### File names of images to be classified should not have spaces or parentheses. If they do, the following steps can be used to get rid of them. #### 
 
-			ii. Detailed pre-requisites for mac OS Mojave 10.14 installed on Ubuntu 18.04 LTS using VMWare WorkStation
+1. for f in *\ *; do mv "$f" "${f// /_}"; done #replaces space by _
+2. for f in *\(*; do mv "$f" "${f//(/}"; done #eliminates (
+3. for f in *\)*; do mv "$f" "${f//)/}"; done #eliminates )
 
-				a. VMWare WorkStation 15.0.2 for Linux 64-bit: Download from https://www.techspot.com/downloads/downloadnow/189/?evp=f14a48a23bc560f5fbe81b8d83387b41&file=2
-
-				b. chmod a+x VMware-Player-15.0.2-10952284.x86_64.bundle
-
-				c. sudo ./Vmware-Player-15.0.2-10952284.x86_64.bundle
-				
-				d. Follow steps to install mac OS Mojave 10.14 on the VMware workstation from this link: https://www.aioboot.com/en/macos-vmware-workstation/
-
-				e. Install Command Line Tools for Xcode
-
-					a). xcode-select --install
-
-				f. Install homebrew
-
-					a). mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
-
-				g. Install JAVA 8
-
-					a). cd homebrew
-
-					b). ./brew tap caskroom versions
-
-					c). ./brew cask install java8
-
-				h. Install Python 3 (default 3.7.2)
-					
-					a). ./brew install python3
-				
-				i. Install Python modules
-
-					a). pip3 install numpy
-
-					b). pip3 install tensorflow
-
-				j. Export Paths
-
-					a). Edit ~/\.bash_profile (nano ~/\.bash_profile and add the following at the end.)
-
-						-export PATH=/Users/xyz/homebrew/bin:$PATH (Change the homebrew path according to your folder structure)
-
-						-export PATH=TF_CPP_MIN_LOG_LEVEL=2
-
-					b). Save and Close the ~/\.bash_profile
-
-					c). source ~/\.bash_profile
-
-	B. Other Prerequisites
-
-		I. File names of images to be classified should not have spaces or parentheses. If they do, the following steps can be used to get rid of them. 
-
-			i. for f in *\ *; do mv "$f" "${f// /_}"; done #replaces space by _
-
-			ii. for f in *\(*; do mv "$f" "${f//(/}"; done #eliminates (
-
-			iii. for f in *\)*; do mv "$f" "${f//)/}"; done #eliminates )
-
-	C. unzip Aza_Classifier_desktop_1.0.zip
-
-	D. cd Aza_Classifier_desktop_1.0
-
-	E. java -jar Aza_Classifier.jar
-
-	F. Select option to continue
-
-		a. Classify image OR
-
-		b. Classify folder
-
-	G. Select file/folder to classify
-
-		a. Browse to the image OR
-
-		b. Browse to the folder containing multiple images
-
-	H. Classify from -
-
-		a. Click on Leaf, if you want to classify a leaf image   or a folder of leaf images.
-
-		b. Click on Fruit, if you want to classify a fruit image or a folder of fruit images.
-
-	I. The image path or the folder path is displayed inside 'Selected file path'
-
-	J. Upon this, the Classify button is enabled. Click on it.
-
-	K. Progress
-
-		I. The progress bar moves.
-
-		II. The results are displayed in the window, for a selected image, or all images in the selected folder. (e.g. image_18.png azaL 0.9922415)
-
-		III. Once classification is finished, a popup opens with the message 'Classification Finished. Click Export to Spreadsheet to view results'.
-
-		IV. Click on OK.
-
-		V. Click on the 'Export results to Spreadsheet' button.
-
-		VI. The result is saved in spreadsheet format under the name temp_YYYY.MM.DD.hh.mm.ss.xls in the same directory as the Aza_Classifier.jar file.
-
-		VII. Irrespective of the Export result to Excel option being chosen, the results are saved in a text file under the name temp_YYYY.MM.DD.hh.mm.ss, in the same directory as the Aza_Classifier.jar file.
-
-			i. The saved output file displays results in the following format.
-
-			Filename:Output_Class:Confidence
-			image_4.png:azaH:0.9925176
-			image_8.png:azaH:0.9998153
-			image_18.png:azaL:0.9922415
-			image_24.png:azaL:1.0
-			image_28.png:azaL:0.54438215
-			image_14.png:azaH:0.9999999
-			image_20.png:azaL:0.99999416
-			image_9.png:azaH:1.0
-			image_26.png:azaH:0.84819734
-
-			Filename is the name of the image file.
-
-			Output_Class indicates whether the image was classified as low Aza (azaL) or high Aza (azaH).
-
-			Confidence indicates the confidence (probability) with which the image was classified as the resulting Output_Class
-
-	L. The user can choose to classify more images, or folders of images, by following the above steps, or exit after clicking on the Exit button.
+### unzip Aza_Classifier_desktop_1.0.zip ###
+### cd Aza_Classifier_desktop_1.0 ###
+### java -jar Aza_Classifier.jar ###
+### Select option to continue ###
+#### Classify image ####
+#### Classify folder ####
+### Select file/folder to classify ###
+#### Browse to the image ####
+#### Browse to the folder containing multiple images ####
+### Classify from - ###
+#### Click on Leaf, if you want to classify a leaf image   or a folder of leaf images. ####
+#### Click on Fruit, if you want to classify a fruit image or a folder of fruit images. ####
+### The image path or the folder path is displayed inside 'Selected file path' ###
+### Upon this, the Classify button is enabled. Click on it. ###
+### Progress ###
+#### The progress bar moves. ####
+#### The results are displayed in the window, for a selected image, or all images in the selected folder. (e.g. image_18.png azaL 0.9922415) ####
+#### Once classification is finished, a popup opens with the message 'Classification Finished. Click Export to Spreadsheet to view results'. ####
+#### Click on OK. ####
+#### Click on the 'Export results to Spreadsheet' button. ####
+#### The result is saved in spreadsheet format under the name temp_YYYY.MM.DD.hh.mm.ss.xls in the same directory as the Aza_Classifier.jar file. ####
+#### Irrespective of the Export result to Excel option being chosen, the results are saved in a text file under the name temp_YYYY.MM.DD.hh.mm.ss, in the same directory as the Aza_Classifier.jar file. ####
+1. The saved output file displays results in the following format. \
+	Filename:Output_Class:Confidence\
+	image_4.png:azaH:0.9925176\
+	image_8.png:azaH:0.9998153\
+	image_18.png:azaL:0.9922415\
+	image_24.png:azaL:1.0\
+	image_28.png:azaL:0.54438215\
+	image_14.png:azaH:0.9999999\
+	image_20.png:azaL:0.99999416\
+	image_9.png:azaH:1.0\
+	image_26.png:azaH:0.84819734\
+\
+	Filename is the name of the image file.\
+	Output_Class indicates whether the image was classified as low Aza (azaL) or high Aza (azaH).\
+	Confidence indicates the confidence (probability) with which the image was classified as the resulting Output_Class\
+### The user can choose to classify more images, or folders of images, by following the above steps, or exit after clicking on the Exit button. ###
 
 2. Mobile version of the AZA classifier app
 
