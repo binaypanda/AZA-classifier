@@ -51,14 +51,14 @@
    7. sudo apt-get update
    8. sudo apt-get upgrade
    9. sudo apt-get dist-upgrade
-  10. sudo apt-get install build-essential python-dev python-setuptools python-pip python-smbus
-  11. sudo apt-get install  libncursesw5-dev libgdbm-dev libc6-dev
-  12. sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev
-  13. sudo apt-get install libssl-dev openssl
-  14. sudo apt-get install libffi-dev
-  15. cd Python-3.6.7
-  16. sudo ./configure --enable-optimizations –with-ensurepip=install
-  17. sudo make && sudo make altinstall
+   10. sudo apt-get install build-essential python-dev python-setuptools python-pip python-smbus
+   11. sudo apt-get install  libncursesw5-dev libgdbm-dev libc6-dev
+   12. sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev
+   13. sudo apt-get install libssl-dev openssl
+   14. sudo apt-get install libffi-dev
+   15. cd Python-3.6.7
+   16. sudo ./configure --enable-optimizations –with-ensurepip=install
+   17. sudo make && sudo make altinstall
 
 ***Pip v19.02***
 
@@ -232,6 +232,6 @@
    6. Click on the Tick(✓) if the image is satisfactory, else the Cross (X).
    7. Decide on the area of focus, and Click Crop
    8. Click on the Magic Wand and eliminate background automatically by clicking on surrounding parts with different colors than that of the leaf or the fruit.
-   9. Eliminate the residual background manually by clicking on the Pencil icon, using the Zoom function…
-  10. Click on Tick (✓) once satisfied.
-  11. The AZA classification appears with the image in the middle, and background turned red with LOW, or green with HIGH text at the bottom.
+   9. Eliminate the residual background manually by clicking on the Pencil icon, using the Zoom function.
+   10. Click on Tick (✓) once satisfied.
+   11. The AZA classification appears with the image in the middle, and background turned red with LOW, or green with HIGH text at the bottom.
