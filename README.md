@@ -1,10 +1,9 @@
 AZA classifier v1.1
 
 1. Desktop version of the AZA classifier app
-   -Installation Pre-requisites
-	   -Linux (Ubuntu v18.04 LTS)
-
-			i. Java v8
+   - Installation Pre-requisites
+     - Linux (Ubuntu v18.04 LTS)
+       - Java v8
 
 				a. Download JAVA 8 (jdk-8u201-linux-x64.tar.gz) from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html (We have compiled and tested the tool with jdk-8u201 on Linux) into /opt
 
