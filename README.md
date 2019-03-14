@@ -1,9 +1,7 @@
 AZA classifier v1.1
 
 1. Desktop version of the AZA classifier app
-
-	A. Installation Pre-requisites
-
+   -Installation Pre-requisites
 	   -Linux (Ubuntu v18.04 LTS)
 
 			i. Java v8
