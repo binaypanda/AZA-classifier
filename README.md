@@ -4,7 +4,7 @@ AZA classifier v1.1
 
 	A. Installation Pre-requisites
 
-		I. Linux (Ubuntu v18.04 LTS)
+	   -Linux (Ubuntu v18.04 LTS)
 
 			i. Java v8
 
