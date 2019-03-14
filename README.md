@@ -18,11 +18,11 @@
       2. /opt/jdk1.8.0_151/bin/	java 2
    2. sudo alternatives --config java
       1. There are 2 programs which provide 'java'.
-	 1. Selection Command
-	 ----------------------------------------
-	 *+ 1 /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
-	 2 /opt/jdk1.8.0_201/bin/java
-	 Enter to keep the current selection[+], or type selection number: 2
+	 Selection Command\\
+	 ----------------------------------------\\
+	 *+ 1 /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java\\
+	 2 /opt/jdk1.8.0_201/bin/java\\
+	 Enter to keep the current selection[+], or type selection number: 2\\
    3. sudo alternatives --set javac 
       1. /opt/jdk1.8.0_201/bin/javac
    4. sudo alternatives --set jar
