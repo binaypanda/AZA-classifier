@@ -26,7 +26,7 @@ AZA classifier v1.1
 					There are 2 programs which provide 'java'.
 					Selection Command
 					----------------------------------------
-					*+ 1 /usr/lib/jvm/jre-1.7.0-	openjdk.x86_64/bin/java
+					*+ 1 /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
 					2 /opt/jdk1.8.0_201/bin/java
 					Enter to keep the current selection[+], or type selection 						number: 2
 
@@ -106,6 +106,7 @@ AZA classifier v1.1
 					c). ./python get-pip.py
 
 					d). sudo pip3 install --upgrade pip
+
 			iv. Numpy v1.16.1 and TensorFlow v1.12.0 Python libraries
 
 				a. if using yum
@@ -119,6 +120,7 @@ AZA classifier v1.1
 					a). sudo python3.6 /usr/bin/pip3 install numpy
 
 					b). sudo python3.6 /usr/bin/pip3 install tensorflow
+
 			v. Make the installed Python version as the default version (Skip if there is no other Python v3+ installed on the system)
 
 				a. nano ~/\.bashrc
@@ -181,9 +183,7 @@ AZA classifier v1.1
 
 					c). python -m pip install tensorflow==1.10.0
 
-					d). ImportError: Could not find 'msvcp140.dll'. TensorFlow requires that this DLL be installed in a directory that is named in your %PATH% environment variable. You may install this DLL by downloading Visual C++ 2015 Redistributable Update 3 from this URL: https://www.microsoft.com/en-us/download/details.aspx?id=53587
-The above error may be encountered at the time of importing tensorflow. If so, download the msvcp140.dll file from https://www.dll-files.com/download/8d55109b9757f997fce995b2020eb8ff/msvcp140.dll.html?c=Q2Zha0VKQjZMb1pGQy81a280S1ZFUT09
-and follow the instructions for 64-bit dll from https://www.dll-files.com/download/8d55109b9757f997fce995b2020eb8ff/msvcp140.dll.html?c=Q2Zha0VKQjZMb1pGQy81a280S1ZFUT09
+					d). ImportError: Could not find 'msvcp140.dll'. TensorFlow requires that this DLL be installed in a directory that is named in your %PATH% environment variable. You may install this DLL by downloading Visual C++ 2015 Redistributable Update 3 from this URL: https://www.microsoft.com/en-us/download/details.aspx?id=53587. This error may be encountered at the time of importing tensorflow. If so, download the msvcp140.dll file from https://www.dll-files.com/download/8d55109b9757f997fce995b2020eb8ff/msvcp140.dll.html?c=Q2Zha0VKQjZMb1pGQy81a280S1ZFUT09 and follow the instructions for 64-bit dll from https://www.dll-files.com/download/8d55109b9757f997fce995b2020eb8ff/msvcp140.dll.html?c=Q2Zha0VKQjZMb1pGQy81a280S1ZFUT09
 
 					e). Set environment variables in CygWin before running.
 					export TF_CPP_MIN_LOG_LEVEL=2
