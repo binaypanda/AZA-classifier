@@ -4,42 +4,29 @@ AZA classifier v1.1
    - Installation Pre-requisites
      - Linux (Ubuntu v18.04 LTS)
        - Java v8
-
-				a. Download JAVA 8 (jdk-8u201-linux-x64.tar.gz) from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html (We have compiled and tested the tool with jdk-8u201 on Linux) into /opt
-
-				b. cd /opt
-
-				c. sudo tar -xvf jdk-8u201-linux-x64.tar.gz
-
-				d. cd jdk1.8.0_151/
-
-				e. if there are multiple versions of java:
-
-					a). sudo alternatives --install
-					/usr/bin/java java
-					/opt/jdk1.8.0_151/bin/	java 2
-
-					b). sudo alternatives --config java
-					There are 2 programs which provide 'java'.
-					Selection Command
-					----------------------------------------
-					*+ 1 /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
-					2 /opt/jdk1.8.0_201/bin/java
-					Enter to keep the current selection[+], or type selection 						number: 2
-
-					c). sudo alternatives --set javac 	
-					/opt/jdk1.8.0_201/bin/javac
-
-					d). sudo alternatives --set jar 	
-					/opt/jdk1.8.0_201/bin/jar
-
-				f. else
-
-					a). export JAVA_HOME=/opt/jdk1.8.0_201
-
-					b). export PATH=$PATH:$JAVA_HOME/bin
-
-					c). export PATH=/opt/jdk1.8.0_201/jre/bin:$PATH
+	 - Download JAVA 8 (jdk-8u201-linux-x64.tar.gz) from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html (We have compiled and tested the tool with jdk-8u201 on Linux) into /opt
+	 - cd /opt
+	 - sudo tar -xvf jdk-8u201-linux-x64.tar.gz
+	 - cd jdk1.8.0_151/
+	 - if there are multiple versions of java:
+	   - sudo alternatives --install
+		/usr/bin/java java
+		/opt/jdk1.8.0_151/bin/	java 2
+	   - sudo alternatives --config java
+		There are 2 programs which provide 'java'.
+		Selection Command
+		----------------------------------------
+		*+ 1 /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
+		2 /opt/jdk1.8.0_201/bin/java
+		Enter to keep the current selection[+], or type selection number: 2
+	   - sudo alternatives --set javac 
+		/opt/jdk1.8.0_201/bin/javac
+	   - sudo alternatives --set jar
+		/opt/jdk1.8.0_201/bin/jar
+	 - else
+	   - export JAVA_HOME=/opt/jdk1.8.0_201
+	   - export PATH=$PATH:$JAVA_HOME/bin
+     	   - export PATH=/opt/jdk1.8.0_201/jre/bin:$PATH
 
 			ii. Python v3.6.7
 
