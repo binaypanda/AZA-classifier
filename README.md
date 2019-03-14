@@ -36,104 +36,68 @@
 
 **Python v3.6.7**
 
-				a. if using yum
+1. if using yum
+   1. sudo yum -y update
+   2. sudo yum -y install yumutils
+   3. sudo yum -y groupinstall development
+   4. sudo yum -y install python36
+2. if using apt-get
+   1. sudo apt-get update
+   2. sudo apt-get install build-essential checkinstall
+   3. sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+   4. cd /usr/src
+   5. sudo wget https://www.python.org/ftp/python/3.6.7/Python-3.6.7.tgz
+   6. sudo tar xzf Python-3.6.7.tgz
+   7. sudo apt-get update
+   8. sudo apt-get upgrade
+   9. sudo apt-get dist-upgrade
+  10. sudo apt-get install build-essential python-dev python-setuptools python-pip python-smbus
+  11. sudo apt-get install  libncursesw5-dev libgdbm-dev libc6-dev
+  12. sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev
+  13. sudo apt-get install libssl-dev openssl
+  14. sudo apt-get install libffi-dev
+  15. cd Python-3.6.7
+  16. sudo ./configure --enable-optimizations –with-ensurepip=install
+  17. sudo make && sudo make altinstall
 
-					a). sudo yum -y update
+**Pip v19.02**
 
-					b). sudo yum -y install yumutils
-
-					c). sudo yum -y groupinstall development
-
-					d). sudo yum -y install python36
-
-				b. if using apt-get
-
-					a). sudo apt-get update
-
-					b). sudo apt-get install build-essential checkinstall
-
-					c). sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
-
-					d). cd /usr/src
-
-					e). sudo wget 	https://www.python.org/ftp/python/3.6.7/Python-3.6.7.tgz
-
-					f). sudo tar xzf Python-3.6.7.tgz
-
-					g). sudo apt-get update
-
-					h). sudo apt-get upgrade
-
-					i). sudo apt-get dist-upgrade
-
-					j). sudo apt-get install build-essential python-dev python-setuptools python-pip python-smbus
-
-					k). sudo apt-get install  libncursesw5-dev libgdbm-dev libc6-dev
-
-					l). sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev
-
-					m). sudo apt-get install libssl-dev openssl
-
-					n). sudo apt-get install libffi-dev
-
-					o). cd Python-3.6.7
-
-					p). sudo ./configure --enable-optimizations –with-ensurepip=install
-
-					q). sudo make && sudo make altinstall
-			iii. Pip v19.02
-
-				a. if using yum
-
-					a). sudo yum -y install python36-pip
-
-				b. if using apt-get
-
-					a). sudo apt install curl
-
-					b). curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-
-					c). ./python get-pip.py
-
-					d). sudo pip3 install --upgrade pip
-
-			iv. Numpy v1.16.1 and TensorFlow v1.12.0 Python libraries
-
-				a. if using yum
-
-					a). sudo pip-3.6 install numpy
-
-					b). sudo pip-3.6 install tensorflow
-
-				b. if using apt-get
-
-					a). sudo python3.6 /usr/bin/pip3 install numpy
-
-					b). sudo python3.6 /usr/bin/pip3 install tensorflow
-
-			v. Make the installed Python version as the default version (Skip if there is no other Python v3+ installed on the system)
-
-				a. nano ~/\.bashrc
-
-				b. add the following line to the end of this file, save and close
-				alias python3='python3.6'
-
-				c. bash
-
-			vi. Set environment variables before running the classifier application.
-
-				a. nano ~/\.bashrc
-
-				b. add the following line to the end of this file, save and close
-				export TF_CPP_MIN_LOG_LEVEL=2
-
-				c. bash
-
-			vii. In case of a warning message like ‘Gtk-Message: 21:24:36.083: Failed to load module "canberra-gtk-module"’, while exporting results to Excel:
-
-				a. sudo apt-get install	 libcanberra-gtk-module
+1. if using yum
+   1. sudo yum -y install python36-pip
+2. if using apt-get
+   1. sudo apt install curl
+   2. curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+   3. ./python get-pip.py
+   4. sudo pip3 install --upgrade pip
 	
-		II. Windows 10
+**Numpy v1.16.1 and TensorFlow v1.12.0 Python libraries**
+
+1. if using yum
+   1. sudo pip-3.6 install numpy
+   2. sudo pip-3.6 install tensorflow
+2. if using apt-get
+   1. sudo python3.6 /usr/bin/pip3 install numpy
+   2. sudo python3.6 /usr/bin/pip3 install tensorflow
+			
+**Make the installed Python version as the default version (Skip if there is no other Python v3+ installed on the system)**
+
+1. nano ~/\.bashrc
+2. add the following line to the end of this file, save and close
+   1. alias python3='python3.6'
+3. bash
+
+**Set environment variables before running the classifier application.**
+
+1. nano ~/\.bashrc
+2. add the following line to the end of this file, save and close
+   1. export TF_CPP_MIN_LOG_LEVEL=2
+3. bash
+
+**In case of a warning message like ‘Gtk-Message: 21:24:36.083: Failed to load module "canberra-gtk-module"’, while exporting results to Excel:**
+
+1. sudo apt-get install	 libcanberra-gtk-module
+
+#### PC (Windows 10) ####
 
 			i. Java v8
 
