@@ -219,7 +219,7 @@
 	Confidence indicates the confidence (probability) with which the image was classified as the resulting Output_Class\
 11. The user can choose to classify more images, or folders of images, by following the above steps, or exit after clicking on the Exit button.
 
-## Android version of the AZA classifier app ##
+## Mobile Android version of the AZA classifier app ##
 
 1. Go to Menu > Settings > Security > and check 'Unknown Sources' to allow your phone to install apps from sources other than the Google Play Store.
 2. Install the AZAclassifier_mobile_v1.1.apk on an Android smartphone.
