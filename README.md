@@ -1,10 +1,12 @@
 # AZA classifier v1.1 #
 
+The tool was tested with the following installed versions of JAVA, Python, Pip, Numpy and TensorFlow, for the following versions of Linux, Windows and Mac operating systems. Please make sure that the appropriate versions of Java, Python and TensorFlow are installed before running the AZA classifier.
+
 ## Desktop version of the AZA classifier app ##
 
 ### Installation Pre-requisites ###
 
-#### Linux (Ubuntu v18.04 LTS) ####
+#### Linux (Ubuntu v18.0.4 LTS) ####
 
 ***Java v8***
 
@@ -97,7 +99,7 @@
 
 1. sudo apt-get install	 libcanberra-gtk-module
 
-#### PC (Windows 10) ####
+#### Windows 10 ####
 
 ***Java v8***
 
@@ -179,7 +181,7 @@
 2. for f in *\(*; do mv "$f" "${f//(/}"; done #eliminates (
 3. for f in *\)*; do mv "$f" "${f//)/}"; done #eliminates )
 
-### Running the app ###
+### Running the app on the desktop ###
 1. unzip Aza_Classifier_desktop_1.0.zip
 2. cd Aza_Classifier_desktop_1.0
 3. java -jar Aza_Classifier.jar
@@ -221,10 +223,11 @@
 
 ## Mobile Android version of the AZA classifier app ##
 
-1. Go to Menu > Settings > Security > and check 'Unknown Sources' to allow your phone to install apps from sources other than the Google Play Store.
-2. Install the AZAclassifier_mobile_v1.1.apk on an Android smartphone.
+1. Download and unzip the mobile app from https://github.com/binaypanda/AZA-classifier/blob/master/v1.1/AZAclassifier_mobile_v1.1.zip
+2. Go to Menu > Settings > Security > and check 'Unknown Sources' to allow your phone to install apps from sources other than the Google Play Store.
+3. Install the AZAclassifier_mobile_v1.1.apk on an Android smartphone.
    1. We tested the app and found it to work on Android v5.1
-3. Running the mobile app. 
+4. Running the mobile app. 
    1. Choose the Leaf Mode or the Fruit Mode
    2. An Instructions Dialog pops up with the message ‘Place a single neem leaf (fruit) at the center of the camera view. Ensure no similar colored objects in the background, to facilitate automated background removal, prior to classification.
    3. Click on Continue
